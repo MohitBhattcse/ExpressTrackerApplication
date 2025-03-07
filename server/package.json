@@ -1,0 +1,33 @@
+{
+  "name": "expensesapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js",
+    "start": "set DATABASE_URL=postgresql://mohitbhatt:pxjKOXHXwPCiPhoYRsrcV3uv7NyLtGJj@dpg-cv3c3bd6l47c73fc0sl0-a.oregon-postgres.render.com/expensetracker_k3im  node ./index.js",
+    "build": "prisma generate"
+  },
+  "keywords": [],
+  "author": "Mohit Bhatt",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "3.14.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "prisma": "^3.14.0"
+  },
+  "engines": {
+    "node": "16.15.0"
+  },
+  "description": ""
+}
